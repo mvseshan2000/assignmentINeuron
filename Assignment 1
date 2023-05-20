@@ -1,0 +1,67 @@
+1. In the below elements which of them are values or an expression? eg:- values can be integer or string and expressions will be mathematical operators.
+* - Expressions
+'hello' - Values
+-87.8 - Values
+- - Expressions
+/ - Expressions
++ - Expressions
+6 - Values
+
+2. What is the difference between string and variable?
+a. In python a variable is a name which refers to a value, which can be of any data type including strings. While strings is a special data type which holds a sequence of characters only.
+b. To hold a value in string both "" and '' are used. Variables, on the other hand don't need them.
+For example,
+x="Hello world"
+c. x is the variable while Hello World! is the string held inside the variable 'x'.
+Strings and used to store and manipulate textual data while variable are used to store and manipulate various data types including strings.
+
+3. Describe three different data types.
+Numeric- These include integers, complex numbers, and floating point numbers.
+Strings- These hold characters in a sequential manner. They are enclosed in "" or ''.
+Boolean- These are binary numbers which are mainly used for verifying if a condition is True or False (1 or 0).
+
+4. What is an expression made up of? What do all expressions do?
+In python an expression is made up of values, operators and a function that can be used to evaluate a result. 
+Values can be constants like '3' or string literal like 'hello' or it can be a variable whose values could change with the program.
+Operators are symbols which perform mathematical operations on one or more values like '*','+','-','/' etc.
+Function call are used to call pre defined or user-defined function which take values as arguements and perform an operation to return a result.
+For example, a buit in function called "len()" takes a list or a string input and returns the total number of string literal in the variable.
+Similarly a user defined function can be of adding two number and returning a result of it's addition.
+a=int(input())
+b=int(input())
+def add(x,y):
+    c=x+y
+    return c
+add(a,b)
+
+5. This assignment statements, like spam = 10. What is the difference between an expression and a statement?
+In Python an expression is a combination of values, operators and a function which are used to produce a result.
+While a statement is a complete instruction in a program that performs some action in a program like "spam=10" which assigns the value '10' in 'spam'. 
+
+6. After running the following code, what does the variable bacon contain?
+bacon = 22
+bacon + 1
+The variable bacon contains value 22.
+
+7. What should the values of the following two terms be?
+'spam' + 'spamspam'
+'spam' * 3
+The following two terms should have the same values since 'spam' + 'spamspam' gets concatinated to spamspamspam and 'spam' * 3 does the same thing and produces the result 'spamspamspam'.
+
+8. Why is eggs a valid variable name while 100 is invalid?
+There are 4 main conditions for naming a variable in Python;
+One of them is that a variable's name should not start with a number thus '100' is invalid.
+Another one says that a variable's name should start with a letter and a third rules says that it should only contain Alpha-Numeric Characters(Aa-Zz 0-9).
+And the last rule suggests that the name can be Case Sensitive(Aa-Zz)
+Thus, 'egg' is a valid name.
+
+9. What three functions can be used to get the integer, floating-point number, or string version of a value?
+int()  - Can be used to get a value in integer format.
+float()- Can be used to get a value in floating-point format.
+str()  - Can be used to get a value in string format.
+
+10. Why does this expression cause an error? How can you fix it?
+'I have eaten ' + 99 + ' burritos.'
+The expression 'I have eaten ' + 99 + ' burritos.' have an integer value 99 between 'I have eaten ' and ' burritos.'.
+We can fix it by putting the 99 in quotes. The correct expression will be as follows;
+'I have eaten ' + '99' + ' burritos.'
