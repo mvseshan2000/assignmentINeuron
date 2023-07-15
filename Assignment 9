@@ -1,0 +1,63 @@
+1. To what does a relative path refer?
+
+A. A relative path refers to the location of a file or directory relative to the current working directory, allowing for navigation without providing the complete or absolute path.
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________'
+
+2. What does an absolute path start with your operating system?
+
+A. An absolute path in most operating systems starts with the root directory symbol, which is typically represented by a forward slash (/) in Unix-based systems (such as Linux and macOS) or a drive letter followed
+by a colon (e.g., C:) in Windows systems.
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+3. What do the functions os.getcwd() and os.chdir() do?
+
+A. The os.getcwd() function is used in Python's os module to get the current working directory (CWD). It returns a string representing the absolute path of the current directory from where the script is executed.
+
+The os.chdir() function is also part of the os module and is used to change the current working directory. It takes a string argument representing the new directory path and sets it as the new current
+working directory for the script.
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+4. What are the . and .. folders?
+
+A. In file systems, the . (dot) folder refers to the current directory, representing the current location. It is used to specify the current directory in file paths or commands. On the other hand, the .. (dot-dot) folder 
+signifies the parent directory, which is one level above the current directory. It is utilized to navigate to the parent directory in file paths or commands. These special folder references enable relative path 
+navigation within the file system hierarchy, allowing for convenient referencing and traversal of directories.
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+5. In C:\bacon\eggs\spam.txt, which part is the dir name, and which part is the base name?
+
+A. dir name - C:\bacon\eggs
+   base name - spam.txt
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+6. What are the three “mode” arguments that can be passed to the open() function?
+
+A. i) "r": This mode is used for reading a file. It allows you to read the contents of an existing file. If the file does not exist, it raises a FileNotFoundError.
+
+ii) "w": This mode is used for writing to a file. It creates a new file for writing or overwrites the contents of an existing file. If the file does not exist, it creates a new file. If it does exist, it truncates the file to zero length.
+
+iii) "a": This mode is used for appending to a file. It allows you to add new content to the end of an existing file. If the file does not exist, it creates a new file for writing.
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+7. What happens if an existing file is opened in write mode?
+
+A. When opening an existing file in write mode ("w"), its contents are erased as the file is truncated to zero length. If the file does not exist, a new file with the specified name is created. Care should 
+be taken to prevent unintentional data loss when using write mode on existing files.
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+8. How do you tell the difference between read() and readlines()?
+
+A. The read() method in Python reads the entire content of a file and returns it as a single string, including newline characters. It provides a way to access the complete file content at once.
+On the other hand, readlines() reads the file line by line and returns a list of strings, where each element represents a line from the file, including the newline character. This method allows for processing file content
+line by line. The distinction lies in the granularity of data retrieval: read() returns the entire file as a string, while readlines() returns a list of strings, each representing a line from the file. 
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+9. What data structure does a shelf value resemble?
+
+A. In Python, a shelf value resembles a dictionary-like data structure. A shelf is an object provided by the shelve module, which is used for persistent storage of Python objects. It acts as a persistent dictionary,
+allowing you to store and retrieve key-value pairs. The values in a shelf can be any picklable Python object, while the keys must be strings. Similar to a dictionary, you can access, modify, and delete values in 
+shelf using their associated keys. However, unlike dictionaries, the values in a shelf are stored persistently on disk rather than in memory.
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
